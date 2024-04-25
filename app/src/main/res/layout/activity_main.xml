@@ -95,16 +95,16 @@
         android:id="@+id/btnMessage"
         android:layout_width="20mm"
         android:layout_height="8mm"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
         android:text="MESSAGE"
         android:textSize="16dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="30dp"
-        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.774" />
+        app:layout_constraintVertical_bias="0.773" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

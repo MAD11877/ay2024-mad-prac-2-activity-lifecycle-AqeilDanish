@@ -31,8 +31,6 @@ public class MainActivity extends AppCompatActivity {
         TextView tvDescription = findViewById(R.id.tvDescription);
         Button btnFollow = findViewById(R.id.btnFollow);
 
-        //hi
-
         // Set the TextViews with the user's name, description and default button messgae
         tvName.setText(user.name);
         tvDescription.setText(user.description);

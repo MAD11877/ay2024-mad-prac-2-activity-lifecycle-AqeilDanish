@@ -14,4 +14,12 @@ public class User {
         this.id = id;
         this.followed = followed;
     }
+
+    public boolean isFollowed(){
+        return followed;
+    }
+
+    public void setFollowed(boolean followed){
+        this.followed = followed;
+    }
 }

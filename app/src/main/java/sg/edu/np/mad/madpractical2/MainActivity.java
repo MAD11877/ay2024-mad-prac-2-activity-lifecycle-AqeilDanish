@@ -31,9 +31,28 @@ public class MainActivity extends AppCompatActivity {
         TextView tvDescription = findViewById(R.id.tvDescription);
         Button btnFollow = findViewById(R.id.btnFollow);
 
-        // Set the TextViews with the user's name, description and default button messgae
-        tvName.setText(user.name);
-        tvDescription.setText(user.description);
-        btnFollow.setText("Follow");
+        // Set button text based on the followed status
+        if (user.isFollowed()) {
+            btnFollow.setText("Unfollow");
+        } else {
+            btnFollow.setText("Follow");
+        }
+
+        // Set onClickListener for the Follow button
+        btnFollow.setOnClickListener(view -> {
+            // Toggle the followed status
+            user.setFollowed(!user.isFollowed());
+            // Update the button text based on the new followed status
+            if (user.isFollowed()) {
+                btnFollow.setText("Unfollow");
+            } else {
+                btnFollow.setText("Follow");
+            }
+        });
+//        Set the TextViews with the user's name, description and default button messgae
+          tvName.setText(user.name);
+          tvDescription.setText(user.description);
+          btnFollow.setText("Follow");
+
     }
 }
